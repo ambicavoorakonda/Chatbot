@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menubar">
+        <i style="padding-top: 2%; padding-left: 20px;" class="fas fa-bars"></i>
+        <h2 style="padding-left: 33%;">Frontend Developer Assignment</h2>
+        <button id="login" >log in</button>
+        
+    </div>
+    <!--CHAT BAR BLOCK-->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <h2>IRIS</h2>
+            <h3>Hello </h3><i class="fa-solid fa-hand-wave"></i>
+            <h4>I am Iris, a Virtual Assistant<br>How may I help you?</h4> 
+            <i id="android" class="fas fa-robot"></i>
+            <h3 id="hide" class="startNew">Start a New Conversation</h3>
+            
+        </button>
+        <div class="content">
+            <div class="full-chat-block">
+                <!--Message Container-->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!--Messages-->hello
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+                        <!--User Input box-->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg" placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+                            <div class="chat-bar-icons">
+                                
+                                <i id="chat-icon" style="color: #333" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                            </div>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/response.js"></script>
+<script src="https://kit.fontawesome.com/07bb041a50.js" crossorigin="anonymous"></script>
+</html>
